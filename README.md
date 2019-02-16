@@ -3,7 +3,7 @@
 ## AutoHotKey script for fast switching between apps
 
 ### Usage
-1. Activate the .ahk script through AutoHotKey
+1. Install AutoHotKey and activate the .ahk script through AutoHotKey. Alternatively, download and run the pre-compiled .exe for 32bit/64bit architecture, which already contains the AutoHotKey interpreter.
 2. At any time press Ctrl+Win+Alt+Key (key = 0 to 9 or a to z). This stores current active window under Key
 3. At any time press Win+Alt+Key (key = 0 to 9 or a to z). This brings back into focus the window that was stored under Key
 4. To run the script on startup, paste a shortcut to the script in your startup folder (you can find it by using Win+R and typing "shell:startup", without quotation marks)
