@@ -1,10 +1,10 @@
 ; ALT-TAB TURBO 
 ; AutoHotKey script for fast switching between apps
-; Usage:
+; Usage
 ;       1. Activate the script through AHK
-;       2. At any time press Ctrl+Win+Alt+Key (key = 0-9 or a-b)
+;       2. At any time press Ctrl+Win+Alt+Key (key = 0 to 9 or a to z)
 ;          This stores current active window under Key
-;       3. At any time press Win+Alt+Key (key = 0-9 or a-b)
+;       3. At any time press Win+Alt+Key (key = 0 to 9 or a to z)
 ;          This brings back into focus the window that was stored under Key
 ;
 ; Refer to https://www.autohotkey.com/docs/AutoHotkey.htm
