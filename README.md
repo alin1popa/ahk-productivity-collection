@@ -39,7 +39,7 @@ Usage example:
 - Now you can paste the first text using LAlt+5 and the second text using LAlt+8
 
 Notes:
-- Be warned that when whenever you use this, the text you copied or pasted also gets copied to the regular clipboard, overwriting its contents
+- Be warned that whenever you use this, the text you copied or pasted also gets copied to the regular clipboard, overwriting its contents
 - This does not interfere with other clipboard manager software you might use
 
 ### AHK Documentation
