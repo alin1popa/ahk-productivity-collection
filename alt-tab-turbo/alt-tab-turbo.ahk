@@ -10,7 +10,7 @@
 ; Refer to https://www.autohotkey.com/docs/AutoHotkey.htm
 ;
 ; Created by Alin Popa
-; Git: https://github.com/alin1popa/alt-tab-turbo
+; Git: https://github.com/alin1popa/ahk-productivity-collection
 ; Licensed under MIT
 
 
