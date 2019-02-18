@@ -1,4 +1,4 @@
-# alt-tab-turbo
+# ahk-productivity-collection
 
 ## Collection of AutoHotKey scripts for improved productivity
 
