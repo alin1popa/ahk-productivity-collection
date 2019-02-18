@@ -1,17 +1,44 @@
+; MULTI-SLOT CLIPBOARD 
+; AutoHotKey script for multislot copy-paste
+; Usage
+;       1. Activate the script through AHK
+;       2. Select some text
+;       3. RAlt + NumberKey to copy selected text into that key's slot
+;       4. LAlt + NumberKey to paste text from that key's slot
+; Warning: copying and pasting from any slot also puts the text from that slot
+; into the clipboard
+;
+; Refer to https://www.autohotkey.com/docs/AutoHotkey.htm
+;
+; Created by Alin Popa
+; Git: https://github.com/alin1popa/alt-tab-turbo
+; Licensed under MIT
 
-ClipboardSlots := []
 
-Copy_To_Slot(nr) {
-    Send, ^c
-    global ClipboardSlots
-    ClipboardSlots[nr] := clipboard
+#NoEnv
+#SingleInstance force
+
+
+ClipboardSlots := []                    ; Holds clipboard contents 
+                                        ; for each slot
+                                        
+Copy_To_Slot(nr) {                      ; Copy selected text to nr-th slot
+    Send, ^c                            ; Send Ctrl+C to copy to clipboard
+    global ClipboardSlots               ; Get global clipboard array
+    ClipboardSlots[nr] := clipboard     ; Save clipboard to global array
 }
 
-Paste_From_Slot(nr) {
-    global ClipboardSlots
-    clipboard := ClipboardSlots[nr]
-    Send, ^v
+Paste_From_Slot(nr) {                   ; Paste from nr-th slot
+    global ClipboardSlots               ; Get global clipboard array
+    clipboard := ClipboardSlots[nr]     ; Copy to clipboard from array
+    Send, ^v                            ; Send Ctrl+V to paste
 }
+
+
+; Bind above functions to each number
+; Right Alt + Number to copy
+; Left Alt + Number to paste
+; To remove binding for one number key comment both its lines with semicolons
 
 >!1::Copy_To_Slot(1)
 <!1::Paste_From_Slot(1)
